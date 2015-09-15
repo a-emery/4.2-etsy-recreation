@@ -1,0 +1,19 @@
+{
+  "name": "4.2-etsy-recreation",
+  "version": "0.0.0",
+  "authors": [
+    "Aaron Emery <aemery14@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "sassafras": "~0.2.0",
+    "neat": "~1.7.2"
+  }
+}
