@@ -1,0 +1,47 @@
+{
+  "name": "sassafras",
+  "version": "0.2.0",
+  "description": "Take control of your stylesheets",
+  "main": "index.js",
+  "dependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-less": "~0.8.2",
+    "grunt-contrib-sass": "~0.9.2",
+    "grunt-contrib-watch": "~0.6.0",
+    "grunt-concurrent": "~2.0.3"
+  },
+  "devDependencies": {
+    "jsdiff": "~1.0.0",
+    "time-grunt": "^1.2.1"
+  },
+  "scripts": {
+    "test": "node gruntfile.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tylerreckart/sassafras.git"
+  },
+  "keywords": [
+    "SASS",
+    "SCSS",
+    "LESS",
+    "CSS",
+    "Compiler"
+  ],
+  "author": {
+    "name": "Tyler Reckart",
+    "email": "tyler.reckart@gmail.com",
+    "url": "http://tylerreckart.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tylerreckart/sassafras_io/issues"
+  },
+  "homepage": "https://github.com/tylerreckart/sassafras_io#readme",
+  "readme": "# sassafras ![Build Status](https://travis-ci.org/tylerreckart/sassafras.svg?branch=master) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)\nA handy multi-language CSS compiler for SASS, Sassy CSS, and LESS\n\n## Introduction\n\nSassafras is a tool for compiling multiple css preprocessors into css that can be read by the browser. It works great with languages like SASS, SCSS (Sassy CSS) and LESS. It was built out of a necessecity for a proper way to compile other languages into CSS. Sassafrass is built to be quick and easy to impliment. Check it out!\n\n### Installation\n\nInstallation is super simple. Just run:\n\n    npm install sassafras_io\n\nThat's it! Just make sure you have all of the dependencies in the root folder of your project.\n\n## Usage\n\nRunning the package is also super easy. Thanks to grunt, all you need is one simple command\n\n   grunt\n\nAs you write your `SCSS` or `LESS`, grunt will watch your code and actively generate a `main.css` file in your main CSS directory.\n\n## Additional Info\n\nDepending on how you lay out your file structure, you may need to edit the paths in the `gruntfile`. If you have your folder structure laid out differently that I built into sassafras, grunt won't know where to look in order to read your `SCSS` or `LESS` and generate the `main.css` file. However, do not fret! Editing the paths in the `gruntfile` is super simple.\n\n### Editing the path/to/css\nFor example:\n```js\n module.exports = function(grunt) {\n grunt.initConfig({\n\tpkg: grunt.file.readJSON('package.json'),\n\tsass: {\n\t\tdist: {\n\t\t\tfiles: {\n\t\t\t\t'assets/css/main.css' : 'assets/scss/*.scss'\n\t\t\t}\n\t\t}\n\t},\n  less: {\n\t\tdist: {\n\t\t\tfiles: {\n\t\t\t\t'assets/css/main.css' : 'assets/less/*.less'\n\t\t\t}\n\t\t}\n\t},\n  ...\n```\nCould become:\n```js\n module.exports = function(grunt) {\n grunt.initConfig({\n\tpkg: grunt.file.readJSON('package.json'),\n\tsass: {\n\t\tdist: {\n\t\t\tfiles: {\n\t\t\t\t'styles/main.css' : 'styles/*.scss'\n\t\t\t}\n\t\t}\n\t},\n  less: {\n\t\tdist: {\n\t\t\tfiles: {\n\t\t\t\t'styles/main.css' : 'styles/*.less'\n\t\t\t}\n\t\t}\n\t},\n  ...\n```\nIt all just depends on how you like to organize your files. I like mine to be organized in a certain way, therefore I wrote sassafras to follow that structure.\n\n## Licensing \n\nThe MIT License (MIT)\n=====================\n\nCopyright © 2015 Tyler A. Reckart\n\nPermission is hereby granted, free of charge, to any person\nobtaining a copy of this software and associated documentation\nfiles (the “Software”), to deal in the Software without\nrestriction, including without limitation the rights to use,\ncopy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the\nSoftware is furnished to do so, subject to the following\nconditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES\nOF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\nNONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT\nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\nWHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\nFROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\nOTHER DEALINGS IN THE SOFTWARE.\n",
+  "readmeFilename": "README.md",
+  "gitHead": "e5c231a80bd0ebea0eb3e930acb9a9ab81aed3ff",
+  "_id": "sassafras_io@0.1.1",
+  "_shasum": "c157597779a46a873643a444f52f448099a56137",
+  "_from": "sassafras_io@*"
+}
