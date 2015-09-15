@@ -7,37 +7,106 @@
   <link rel="stylesheet" href="assets/css/main.css" style="text/css">
 </head>
 <body>
-<header>
-  <div class="top-header-container">
-    <div class="top-header">
-      <a href="#" class="logo-img-link"><img src="assets/img/logo.png" alt="" class="logo-img"></a>
-      <form action="" class="search-form">
-        <input type="text" class="search-query"><button class="search-button">Search</button>
-      </form>
-      <ul class="header-account-info-list">
-        <li class="header-list-items"><a href="" class="header-list-item">Sell on Etsy</a></li>
-        <li class="header-list-items"><a href="" class="header-list-item">Register</a></li>
-        <li class="header-list-items"><a href="" class="header-list-item">Sign in</a></li>
-        <li class="header-list-items"><a href="" class="header-list-item">Shopping Cart</a></li>
+
+  <header>
+    <div class="top-header-container">
+      <div class="top-header">
+        <a href="#" class="logo-img-link"><img src="assets/img/logo.png" alt="" class="logo-img"></a>
+        <form action="" class="search-form">
+          <input type="text" class="search-query"><button class="search-button">Search</button>
+        </form>
+        <ul class="header-account-info-list">
+          <li class="header-list-items"><a href="" class="header-list-item">Sell on Etsy</a></li>
+          <li class="header-list-items"><a href="" class="header-list-item">Register</a></li>
+          <li class="header-list-items"><a href="" class="header-list-item">Sign in</a></li>
+          <li class="header-list-items"><a href="" class="header-list-item">Shopping Cart</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-header-continer">
+      <div class="bottom-header">
+        <ul class="categories-list">
+          <li class="category-list-item">Clothing & Accessories</li>
+          <li class="category-list-item">Jewelry</li>
+          <li class="category-list-item">Craft Supplies & Tools</li>
+          <li class="category-list-item">Weddings</li>
+          <li class="category-list-item">Entertainment</li>
+          <li class="category-list-item">Home & Living</li>
+          <li class="category-list-item">Kids & Baby</li>
+          <li class="category-list-item">Vintage</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+<div class="main-body-container">
+
+  <div class="sidebar">
+    <h4 class="sidebar-heading">Show results for:</h4>
+    <div class="categories-sidebar-list">
+      <h4 class="sidebar-heading">All Categories</h4>
+      <ul>
+        <li>Home & Living</li>
+        <li>Art & Collectibles</li>
+        <li>Weddings</li>
+        <li>Clothing</li>
+        <li>Jewelry</li>
+        <li>Paper & Party Supplies</li>
+        <li>Accessories</li>
+        <li>Craft Supplies & Tools</li>
+        <li>Bags & Purses</li>
+        <li>Bath & Beauty</li>
+        <li>Shoes</li>
+        <li>Books, Movies, and Music</li>
+        <li>Electronics & Accessories</li>
+        <li>Toys & Games</li>
+        <li>Pet Supplies</li>
       </ul>
     </div>
-  </div>
-  <div class="bottom-header-continer">
-    <div class="bottom-header">
-      <ul class="categories-list">
-        <li class="category-list-item">Clothing & Accessories</li>
-        <li class="category-list-item">Jewelry</li>
-        <li class="category-list-item">Craft Supplies & Tools</li>
-        <li class="category-list-item">Weddings</li>
-        <li class="category-list-item">Entertainment</li>
-        <li class="category-list-item">Home & Living</li>
-        <li class="category-list-item">Kids & Baby</li>
-        <li class="category-list-item">Vintage</li>
-      </ul>
+    <h4 class="sidebar-heading">Refine your search</h4>
+    <div class="refine-your-search-sidebar">
+
     </div>
   </div>
-</header>
+
+  <div class="main-content-container">
+
+    <h3 class="main-content-heading">Top categories for "whiskey"</h3>
+    <div class="top-categories-top-row">
+      <div class="top-category-top-row-one"></div>
+      <div class="top-category-top-row-two"></div>
+    </div>
+    <div class="top-categories-bottom-row">
+      <div class="top-category-bottom-row-one"></div>
+      <div class="top-category-bottom-row-two"></div>
+      <div class="top-category-bottom-row-three"></div>
+    </div>
+    <div class="search-results-header">
+      <div class="search-results-header-left">All categories &#12297; "whiskey" (24,361 Results)</div>
+      <div class="search-results-header-right">Sort by Relevancy</div>
+    </div>
+    <ul class="item-list">
+    </ul>
+
+  </div>
+
+</div>
 
 
+<script id="item-template" type="text/x-handlebars-template">
+  <li class="item">
+    <img class="item-img" src="{{Images.[0].url_570xN}}"></img>
+    <div class="item-info-container">
+      <div class="item-name">{{title}}</div>
+      <div class="item-info-text-container">
+        <div class="seller-info">{{Shop.shop_name}}</div>
+        <div class="price">{{price}}</div>
+      </div>
+    </div>
+  </li>
+</script>
+
+<script src="bower_components/handlebars/handlebars.min.js"></script>
+<script src="assets/scripts/main.js"></script>
 </body>
 </html>

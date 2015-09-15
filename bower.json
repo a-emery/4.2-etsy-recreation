@@ -13,7 +13,8 @@
     "tests"
   ],
   "dependencies": {
-    "sassafras": "~0.2.0",
-    "neat": "~1.7.2"
+    "handlebars": "~4.0.2",
+    "neat": "~1.7.2",
+    "sassafras": "~0.2.0"
   }
 }

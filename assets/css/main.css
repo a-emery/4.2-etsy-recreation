@@ -8,9 +8,15 @@ body {
   background: #f5f5f1;
   margin: 0; }
 
+.main-body-container {
+  width: 980px;
+  margin: 0 auto; }
+
+/************************
+HEADER STUFFS
+************************/
 header {
-  height: 125px;
-  background: green; }
+  height: 125px; }
 
 .top-header-container {
   height: 81px;
@@ -67,10 +73,198 @@ header {
 
 .categories-list {
   display: inline-block;
-  padding: 0; }
+  padding: 0;
+  font-family: "Open Sans";
+  font-size: .8rem;
+  color: #555555;
+  letter-spacing: .4px; }
 
 .category-list-item {
   display: inline-block;
-  margin-right: 10px; }
+  margin-right: 12px;
+  padding: 0 3px; }
+
+/*************************
+SIDEBAR STUFFS
+*************************/
+.sidebar {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 27.49666%;
+  height: 500px;
+  font-family: "Open Sans"; }
+  .sidebar:last-child {
+    margin-right: 0; }
+
+.sidebar-heading {
+  padding: 0;
+  margin: 24px 0 12px 0;
+  color: #555555;
+  font-size: .8rem; }
+
+.categories-sidebar-list {
+  background: white;
+  padding: 7px;
+  line-height: 1.5rem;
+  font-size: .8rem;
+  border: 1px solid #e2e4df;
+  border-radius: 3px; }
+
+.categories-sidebar-list ul {
+  list-style: none;
+  padding-left: 20px;
+  margin-top: 0;
+  color: #6592b2; }
+
+.refine-your-search-sidebar {
+  background: white;
+  padding: 7px;
+  height: 500px; }
+
+/************************
+MAIN CONTENT STUFFS
+************************/
+.main-content-container {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 70.14568%;
+  margin-right: 0; }
+  .main-content-container:last-child {
+    margin-right: 0; }
+
+.top-categories-top-row {
+  margin-bottom: 10px; }
+  .top-categories-top-row::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.top-category-top-row-one {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  background-image: url(../img/top-one-bg.jpg);
+  background-size: cover;
+  height: 200px; }
+  .top-category-top-row-one:last-child {
+    margin-right: 0; }
+
+.top-category-top-row-two {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-right: 0;
+  background-image: url(../img/top-two-bg.jpg);
+  background-size: cover;
+  height: 200px; }
+  .top-category-top-row-two:last-child {
+    margin-right: 0; }
+
+.top-categories-bottom-row {
+  margin-bottom: 10px; }
+  .top-categories-bottom-row::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.top-category-bottom-row-one {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  background-image: url(../img/bottom-one-bg.jpg);
+  background-size: cover;
+  height: 150px; }
+  .top-category-bottom-row-one:last-child {
+    margin-right: 0; }
+
+.top-category-bottom-row-two {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  background-image: url(../img/bottom-two-bg.jpg);
+  background-size: cover;
+  height: 150px; }
+  .top-category-bottom-row-two:last-child {
+    margin-right: 0; }
+
+.top-category-bottom-row-three {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  margin-right: 0;
+  background-image: url(../img/bottom-three-bg.jpg);
+  background-size: cover;
+  height: 150px; }
+  .top-category-bottom-row-three:last-child {
+    margin-right: 0; }
+
+.search-results-header::after {
+  clear: both;
+  content: "";
+  display: table; }
+
+.search-results-header-left {
+  float: left; }
+
+.search-results-header-right {
+  float: right; }
+
+/*************************
+RESULTS ITEMS
+*************************/
+.item-list {
+  padding: 0;
+  margin: 0; }
+
+.item {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  overflow: hidden;
+  white-space: nowrap;
+  background: white;
+  border: 1px solid #cbccc9;
+  border-radius: 3px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: .7rem; }
+  .item:last-child {
+    margin-right: 0; }
+  .item:nth-child(3n) {
+    margin-right: 0; }
+  .item:nth-child(3n+1) {
+    clear: left; }
+
+.item-img {
+  width: 100%;
+  height: 180px; }
+
+.item-name {
+  display: block;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 4px;
+  margin-bottom: 4px; }
+
+.seller-info {
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 5px;
+  float: left; }
+
+.price {
+  padding-left: 5px;
+  padding-right: 5px;
+  float: right; }
 
 /*# sourceMappingURL=main.css.map */
