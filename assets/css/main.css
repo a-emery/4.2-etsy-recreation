@@ -103,6 +103,9 @@ SIDEBAR STUFFS
   color: #555555;
   font-size: .8rem; }
 
+.sidebar-list-heading {
+  margin: 0; }
+
 .categories-sidebar-list {
   background: white;
   padding: 7px;
